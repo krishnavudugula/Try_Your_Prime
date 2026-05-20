@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from pathlib import Path
@@ -146,6 +145,3 @@ async def chat(payload: ConversationPayload):
         print(error_msg)
         return JSONResponse({"error": "Invalid JSON from AI", "raw": text[:500]}, status_code=500)
 
-
-# Serve static frontend from workspace root
-app.mount('/', StaticFiles(directory=str(ROOT), html=True), name='static')
