@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Try Your Prime | Future Projection</title>
+  <meta name="description" content="A structured future-self assessment. Behavioral projection engine that shows you where your current trajectory leads." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <header class="topbar container">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">TYP</div>
+      <div class="brand-copy">
+        <strong>Try Your Prime</strong>
+        <small>Behavioral Projection Engine</small>
+      </div>
+    </a>
+    <nav class="topnav">
+      <a href="#insights">Methodology</a>
+      <a href="#timeline">Timeline</a>
+      <a href="chat.html" class="nav-cta">Run Assessment</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ───────────────────────────────────────── -->
+    <section class="hero container">
+      <div class="hero-copy reveal">
+
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span class="eyebrow">High-Fidelity AI Assessment</span>
+        </div>
+
+        <h1>The version you<br>become is <em>shaped</em><br>today.</h1>
+
+        <p class="hero-text">
+          Input your daily habits, honest routines, and real goals. Our engine processes the data to project a stark, accurate snapshot of where your current trajectory leads — and what it will cost you if nothing changes.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="chat.html">Initialize Assessment &rarr;</a>
+          <a class="btn btn-ghost" href="#insights">View Architecture</a>
+        </div>
+
+        <div class="hero-sub">
+          <div class="hero-sub-item">
+            <span class="hero-sub-dot"></span>
+            <span>8-minute assessment</span>
+          </div>
+          <div class="hero-sub-item">
+            <span class="hero-sub-dot"></span>
+            <span>No sugarcoating</span>
+          </div>
+          <div class="hero-sub-item">
+            <span class="hero-sub-dot"></span>
+            <span>Instant projection</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Projection Sandbox Panel -->
+      <aside class="hero-panel reveal" style="animation-delay: 0.15s">
+        <div class="bento-grid">
+
+          <!-- Header cell -->
+          <div class="bento-cell bento-span-2 bento-header" style="padding: 22px 28px;">
+            <span class="eyebrow" style="font-size: 0.65rem;">Live Projection Sandbox</span>
+            <span class="live-badge">
+              <span class="live-dot"></span>
+              Active
+            </span>
+          </div>
+
+          <!-- Score -->
+          <div class="bento-cell bento-span-2">
+            <div class="score-ring-wrap">
+              <div class="score-ring">
+                <div class="score-ring-accent"></div>
+                <span class="score-ring-num">82</span>
+              </div>
+              <div>
+                <div class="score-label">Future Trajectory Index</div>
+                <div class="score-trend">↑ High Probability</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metrics -->
+          <div class="bento-cell">
+            <div class="bento-metric-label">Discipline Vector</div>
+            <div class="bento-metric-val">Scaling</div>
+          </div>
+          <div class="bento-cell">
+            <div class="bento-metric-label">Risk Factor</div>
+            <div class="bento-metric-val danger">Burnout</div>
+          </div>
+
+        </div>
+      </aside>
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- ── Features Section ───────────────────────────── -->
+    <section id="insights" class="container section">
+
+      <div class="section-head reveal">
+        <div class="eyebrow" style="margin-bottom: 20px;">Methodology</div>
+        <h2>Built on<br>ruthless honesty.</h2>
+        <p>
+          A refined interface for brutal truths. We don't sugarcoat the projection — we structure it so you can actually act on it.
+        </p>
+      </div>
+
+      <div class="feature-grid reveal">
+
+        <article class="feature-card">
+          <span class="feature-num">01</span>
+          <h3>Raw Inputs</h3>
+          <p>We collect the silent habits: screen time, sleep deficit, financial impulsivity, and the routines you don't admit to yourself.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-num">02</span>
+          <h3>Algorithmic Projection</h3>
+          <p>AI models transform behavioral data into a probable multi-year trajectory — not a motivational speech, but a probability map.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-num">03</span>
+          <h3>Corrective Actions</h3>
+          <p>Identify exactly what needs to stop today. Not vague advice — specific, prioritized changes that shift your trajectory.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <hr class="section-rule" />
+
+    <!-- ── CTA ────────────────────────────────────────── -->
+    <section id="timeline" class="container section" style="padding-bottom: 160px;">
+      <div class="cta-band reveal">
+        <div class="cta-content">
+          <div class="eyebrow" style="margin-bottom: 16px;">Ready to begin?</div>
+          <h2>Face the algorithm.</h2>
+          <p>Discover what your habits are building before it becomes your permanent reality.</p>
+        </div>
+        <a class="btn btn-primary" href="chat.html" style="font-size: 0.82rem; padding: 16px 40px; flex-shrink: 0;">
+          Start the Engine &rarr;
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Hero loads immediately
+    document.querySelectorAll('.hero .reveal').forEach(el => {
+      setTimeout(() => el.classList.add('visible'), 80);
+    });
+  </script>
+
+</body>
+</html>

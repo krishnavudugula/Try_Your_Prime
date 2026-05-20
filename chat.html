@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assessment — Try Your Prime</title>
+  <meta name="description" content="Live assessment of your future trajectory." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <nav class="site-nav container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">TYP</span>
+      <span class="logo-text">Try Your Prime</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="back-link">&larr; Back to Overview</a>
+    </div>
+  </nav>
+
+  <!-- ── Main Layout ───────────────────────────────── -->
+  <main class="app-layout container">
+
+    <!-- Chat Column -->
+    <section class="chat-interface">
+
+      <!-- Header -->
+      <header class="chat-header">
+        <div>
+          <h2 class="chat-title">The Assessment</h2>
+          <p class="chat-subtitle">Be brutally honest — the engine adapts to your answers.</p>
+        </div>
+      </header>
+
+      <!-- Messages -->
+      <div class="chat-history" id="chatWindow" aria-live="polite">
+        <!-- Messages injected by script.js -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator" id="typingIndicator" hidden>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!-- Input Controls -->
+      <div class="chat-controls">
+
+        <!-- Quick reply chips -->
+        <div class="quick-reply-wrapper" id="quickPicks">
+          <!-- Injected by script.js -->
+        </div>
+
+        <!-- Text input form -->
+        <form class="chat-input-area" id="chatForm">
+          <input
+            type="text"
+            id="chatInput"
+            autocomplete="off"
+            placeholder="Type your answer here..."
+            aria-label="Chat input"
+          />
+          <button type="submit" class="btn-primary-small">Send</button>
+          <button type="button" id="cancelBtn" class="btn-cancel" style="display: none;">
+            Cancel
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Analysis Sidebar -->
+    <aside class="analysis-panel">
+
+      <div class="panel-header">
+        <h3>Live Trajectory</h3>
+        <span class="status-indicator live-pulse">Analyzing</span>
+      </div>
+
+      <div class="bento-stack">
+
+        <!-- Goal Progress -->
+        <div class="data-card bento-main">
+          <span class="data-label">Target Goal</span>
+          <strong class="data-value" id="liveGoal">Pending input…</strong>
+          <div class="progress-bar-container mt-3">
+            <div class="progress-bar-fill" id="goalProgress" style="width: 5%;"></div>
+          </div>
+          <span class="data-metric" id="distanceMetric">Distance: Awaiting data</span>
+        </div>
+
+        <!-- Red Flags -->
+        <div class="bento-sub warning">
+          <span class="data-label">Critical Red Flags</span>
+          <strong class="data-value text-red" id="liveRisk">Scanning habits…</strong>
+          <p class="data-detail" id="liveRiskDetail">
+            Habits requiring immediate elimination will appear here based on your inputs.
+          </p>
+        </div>
+
+        <!-- Outcome -->
+        <div class="bento-sub highlight">
+          <span class="data-label">Calculated Outcome</span>
+          <strong class="data-value" id="liveFuture">Undefined</strong>
+          <p class="data-detail" id="liveFutureDetail">
+            Complete the assessment to unlock your timeline projection.
+          </p>
+        </div>
+
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
